@@ -15,8 +15,8 @@ style.set_theme("equilux")
 root.geometry("500x120")
 root.resizable(False, False)
 root.title("YouTube Video Downloader")
-root.config(bg="black")
-root.wm_iconbitmap("youtube.ico")
+root.config(bg="#414141")
+root.iconbitmap("youtube.ico")
 
 
 def Widgets():
@@ -25,7 +25,7 @@ def Widgets():
     ttk.Label(root, text="Destination :").grid(row=2, column=0, pady=5, padx=5)
     ttk.Entry(root, width=40, textvariable=download_Path).grid(row=2, column=1, pady=5, padx=5)
     ttk.Button(root, text="Browse", command=Browse).grid(row=2, column=2, pady=1, padx=1)
-    ttk.Button(root, text="Download", command=Download).grid(row=3, column=1, pady=3, padx=3)
+    ttk.Button(root, text="Download", command=Download ).grid(row=3, column=1, pady=3, padx=3)
 
 
 def Browse():
