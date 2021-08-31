@@ -11,18 +11,18 @@ n = ToastNotifier()
 root = tk.Tk()
 style = ThemedStyle(root)
 
-style.set_theme("equilux")
+style.set_theme("ubuntu")
 root.geometry("500x120")
 root.resizable(False, False)
 root.title("YouTube Video Downloader")
-root.config(bg="#414141")
+root.config(bg="white")
 root.iconbitmap("youtube.ico")
 
 
 def Widgets():
-    ttk.Label(root, text="YouTube link :").grid(row=1, column=0, pady=5, padx=5)
+    tk.Label(root, text="YouTube link :",background="white").grid(row=1, column=0, pady=5, padx=5)
     ttk.Entry(root, width=55, textvariable=video_Link).grid(row=1, column=1, pady=5, padx=5, columnspan=2)
-    ttk.Label(root, text="Destination :").grid(row=2, column=0, pady=5, padx=5)
+    tk.Label(root, text="Destination :",background="white").grid(row=2, column=0, pady=5, padx=5)
     ttk.Entry(root, width=40, textvariable=download_Path).grid(row=2, column=1, pady=5, padx=5)
     ttk.Button(root, text="Browse", command=Browse).grid(row=2, column=2, pady=1, padx=1)
     ttk.Button(root, text="Download", command=Download ).grid(row=3, column=1, pady=3, padx=3)
